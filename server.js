@@ -49,5 +49,7 @@ app.get('/bad',(req,res) => {
     res.send({
         errorMessage: 'An error has occured'
     })
-})
-app.listen(3000);
+});
+
+console.log('Running on port '+port);
+app.listen(port);
